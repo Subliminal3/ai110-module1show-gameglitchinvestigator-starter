@@ -35,9 +35,9 @@ def check_guess(guess, secret):
 
     try:
         if guess > secret:
-            return "Too High", "📉 Go LOWER!"
+            return "Too High", "📈 Go HIGHER!"
         else:
-            return "Too Low", "📈 Go HIGHER!"
+            return "Too Low", "📉 Go LOWER!"
     except TypeError:
         g = str(guess)
         if g == secret:
@@ -93,7 +93,7 @@ if "secret" not in st.session_state:
     st.session_state.secret = random.randint(low, high)
 
 if "attempts" not in st.session_state:
-    st.session_state.attempts = 0
+    st.session_state.attempts = 1
 
 if "score" not in st.session_state:
     st.session_state.score = 0
@@ -179,7 +179,7 @@ if submit:
                 f"Final score: {st.session_state.score}"
             )
         else:
-            if st.session_state.attempts > attempt_limit:
+            if st.session_state.attempts >= attempt_limit:
                 st.session_state.status = "lost"
                 st.error(
                     f"Out of attempts! "

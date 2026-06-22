@@ -5,49 +5,26 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 ## 1. What was broken when you started?
 
 - What did the game look like the first time you ran it?
-
-  Everything appeared normal. I could make guesses.
-
 - List at least two concrete bugs you noticed at the start  
   (for example: "the hints were backwards").
-
-  Go higher and go lower were backwards
-
-  the new game button is broken. when i click it the attempts reset but i cannot input anymore numbers
-
-  The attempts left is 1 less than it should be. and the answer is revealed on the second to last attempt. Indexing issue im guessing
 
 **Bug Reproduction Log**
 
 Document at least 3 bugs you found. Add rows as needed.
 
-| Input     | Expected Behavior   | Actual Behavior                            | Console Output / Error |
-| --------- | ------------------- | ------------------------------------------ | ---------------------- |
-| number 12 | Higher hint         | Lower hint                                 |                        |
-| new game  | restart the game    | restarts game but cannot input any numbers |                        |
-| none      | displays attempts 8 | displays attempts 7                        |                        |
+| Input | Expected Behavior | Actual Behavior | Console Output / Error |
+|-------|-------------------|-----------------|------------------------|
+| | | | |
+| | | | |
+| | | | |
 
 ---
 
 ## 2. How did you use AI as a teammate?
 
 - Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)?
-
-claude
-
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
-
-It fixed the higher lower error by changing the text. I tested the changes and now the hint works correctly.
-
-    try:
-        if guess > secret:
-            return "Too High", "📉 Go LOWER!"
-        else:
-            return "Too Low", "📈 Go HIGHER!"
-
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
-
-
 
 ---
 
